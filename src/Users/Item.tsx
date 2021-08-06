@@ -5,7 +5,7 @@ import jobsContext from '../context/jobs'
 import Summary from './Summary'
 import UserProvider from '../context/user/provider'
 
-export default function UserItem (
+export default function Item (
   user: User
 ): JSX.Element {
   const { name, role, company } = user
@@ -15,7 +15,7 @@ export default function UserItem (
 
   const jobs = userJobs?.(name)
 
-  const paragraphs = jobs?.map(job => {
+  const summaries = jobs?.map(job => {
     return (
       <Summary key={job.name} {...job} />
     )
@@ -28,11 +28,9 @@ export default function UserItem (
   return (
     <UserProvider user={user}>
       <div>
-        <h2>{name}</h2>
+        <h3>{name} ({role}, {company})</h3>
 
-        <h3>{role}, {company}</h3>
-
-        {paragraphs}
+        {summaries}
 
         <button onClick={remove}>Remove</button>
       </div>

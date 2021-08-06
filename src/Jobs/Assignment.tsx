@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import usersContext from '../context/users'
 
-export default function Item (
+export default function Assignment (
   { user, name }: { user: string, name: string }
 ): JSX.Element {
   const { findUser } = useContext(usersContext)
@@ -12,8 +12,8 @@ export default function Item (
   console.log('key test:', key)
 
   const labels: Record<string, string> = {
-    Teacher: 'teach you',
-    Developer: 'develop your'
+    Teacher: 'teach',
+    Developer: 'develop'
   }
   const label = labels[key]
   // const label = labels[found['role']]

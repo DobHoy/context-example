@@ -6,7 +6,7 @@ import { Job } from '../types'
 export default function Summary (
   { name, users }: Job
 ): JSX.Element {
-  const items = users.map(username => {
+  const colleagues = users.map(username => {
     return (
       <Colleague key={username} username={username} />
     )
@@ -15,12 +15,12 @@ export default function Summary (
   const { user } = useContext(userContext)
 
   return (
-    <p key={name}>
+    <div key={name}>
       You will work as a {user?.role} on {name}
 
       <ul>
-        {items}
+        {colleagues}
       </ul>
-    </p>
+    </div>
   )
 }

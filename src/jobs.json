@@ -1,10 +1,14 @@
 [
   {
-    "name": "React Context",
-    "users": ["David", "Libby"]
+    "name": "React context",
+    "users": ["David", "Ali"]
   },
   {
     "name": "Stairs website",
     "users": ["Ali"]
+  },
+  {
+    "name": "Sewing app",
+    "users": ["David", "Libby"]
   }
 ]
