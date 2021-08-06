@@ -10,10 +10,11 @@ export default function Colleague (
 
   const found = findUser?.(username)
 
-  const match = user?.name === found?.name
   const item = (
-    <li key={username}>{user?.name} as {user?.role}</li>
+    <li key={username}>{found?.name} as {found?.role}</li>
   )
+
+  const match = user?.name === found?.name
   if (match) {
     return <b>{item}</b>
   }

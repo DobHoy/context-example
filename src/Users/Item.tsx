@@ -22,9 +22,7 @@ export default function UserItem (
   })
 
   function remove (): void {
-    if (removeUser != null) {
-      removeUser(name)
-    }
+    removeUser?.(name)
   }
 
   return (
