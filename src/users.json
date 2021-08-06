@@ -1,0 +1,17 @@
+[
+  {
+    "name": "David",
+    "role": "Teacher",
+    "company": "Objective Enterprises"
+  },
+  {
+    "name": "Libby",
+    "role": "Teacher",
+    "company": "Objective Enterprises"
+  },
+  {
+    "name": "Ali",
+    "role": "Developer",
+    "company": "Fullstack Savvy"
+  }
+]
