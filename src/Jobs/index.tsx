@@ -5,7 +5,7 @@ import Items from './Items'
 export default function Jobs (): JSX.Element {
   return (
     <>
-      <h2>Jobs</h2>
+      <h1>Jobs</h1>
 
       <UsersProvider>
         <JobsProvider>

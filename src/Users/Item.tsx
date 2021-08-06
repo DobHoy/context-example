@@ -27,13 +27,17 @@ export default function Item (
 
   return (
     <UserProvider user={user}>
-      <div>
-        <h3>{name} ({role}, {company})</h3>
+      <>
+        <h2>
+          {name}
+          {' '}
+          ({role}, {company})
+          {' '}
+          <button onClick={remove}>Remove</button>
+        </h2>
 
-        {summaries}
-
-        <button onClick={remove}>Remove</button>
-      </div>
+        <ul>{summaries}</ul>
+      </>
     </UserProvider>
   )
 }

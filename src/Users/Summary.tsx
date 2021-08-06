@@ -15,12 +15,14 @@ export default function Summary (
   const { user } = useContext(userContext)
 
   return (
-    <div key={name}>
-      You will work as a {user?.role} on {name}
+    <li>
+      <h4>You will work as a {user?.role} on {name}</h4>
+
+      <p>Colleagues</p>
 
       <ul>
         {colleagues}
       </ul>
-    </div>
+    </li>
   )
 }

@@ -12,8 +12,8 @@ export default function Items (): JSX.Element {
   })
 
   return (
-    <ul>
+    <>
       {items}
-    </ul>
+    </>
   )
 }

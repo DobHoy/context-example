@@ -11,10 +11,10 @@ export default function Item (
   })
 
   return (
-    <li>
-      <h3>{name}</h3>
+    <>
+      <h2>{name}</h2>
 
-      {assignments}
-    </li>
+      <ul>{assignments}</ul>
+    </>
   )
 }

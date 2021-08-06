@@ -16,10 +16,9 @@ export default function Assignment (
     Developer: 'develop'
   }
   const label = labels[key]
-  // const label = labels[found['role']]
 
   return (
-    <p>
+    <li>
       <i>{user}</i>
       {' '}
       from
@@ -31,6 +30,6 @@ export default function Assignment (
       <b>{label}</b>
       {' '}
       <i>{name}</i>
-    </p>
+    </li>
   )
 }
